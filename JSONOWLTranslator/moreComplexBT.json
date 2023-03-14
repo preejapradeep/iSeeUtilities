@@ -1,0 +1,129 @@
+{
+  "version": "0.1.0",
+  "scope": "project",
+  "selectedTree": "cff252ca-3708-4e42-ad62-eadf0d47ce35",
+  "trees": [
+    {
+      "version": "0.1.0",
+      "scope": "tree",
+      "id": "0ff75456-ffcb-4c76-8178-59cddda5a719",
+      "Instance": "Explanation Experience",
+      "description": "",
+      "root": null,
+      "properties": {
+		"threshold1": 0.5,
+		"threshold2": 0.25
+	  },
+      "nodes": {},
+      "display": {
+        "camera_x": 960,
+        "camera_y": 480.5,
+        "camera_z": 1,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "version": "0.1.0",
+      "scope": "tree",
+      "id": "cff252ca-3708-4e42-ad62-eadf0d47ce35",
+      "Instance": "Explanation Experience",
+      "description": "",
+      "root": "523a5057-c029-4fc2-88fe-a00ee2acb91a",
+      "properties": {},
+      "nodes": {
+        "523a5057-c029-4fc2-88fe-a00ee2acb91a": {
+          "id": "523a5057-c029-4fc2-88fe-a00ee2acb91a",
+          "Concept": "Sequence",
+          "Instance": "Sequence",
+          "description": "",
+          "properties": {},
+          "display": {
+            "x": -192,
+            "y": -288
+          },
+          "firstChild": {
+            "Id": "7fa50f1c-0b69-4d2d-8199-8b55f708cdb9",
+            "Next": {
+              "Id": "3ee7a80a-8221-4cab-a5dc-54248c51bc2f",
+              "Next": {
+                "Id": "c1893c17-8d02-4ca1-81a0-c0e91be1e436",
+                "Next": null
+              }
+            }
+          }
+        },
+        "7fa50f1c-0b69-4d2d-8199-8b55f708cdb9": {
+          "id": "7fa50f1c-0b69-4d2d-8199-8b55f708cdb9",
+          "Concept": "Explanation Method",
+          "Instance": "Explanation Method",
+          "description": "",
+          "properties": {},
+          "display": {
+            "x": -312,
+            "y": -96
+          }
+        },
+        "3ee7a80a-8221-4cab-a5dc-54248c51bc2f": {
+          "id": "3ee7a80a-8221-4cab-a5dc-54248c51bc2f",
+          "Concept": "Priority",
+          "Instance": "Priority",
+          "description": "",
+          "properties": {},
+          "display": {
+            "x": -48,
+            "y": -96
+          },
+          "firstChild": {
+            "Id": "16674d0e-625e-42d5-8747-5d424b561e94",
+            "Next": {
+              "Id": "160cd3df-4cc2-40f3-9443-db4b9c41bc49",
+              "Next": null
+            }
+          }
+        },
+        "16674d0e-625e-42d5-8747-5d424b561e94": {
+          "id": "16674d0e-625e-42d5-8747-5d424b561e94",
+          "Concept": "Explanation Method",
+          "Instance": "Explanation Method",
+          "description": "",
+          "properties": {},
+          "display": {
+            "x": -204,
+            "y": 156
+          }
+        },
+        "160cd3df-4cc2-40f3-9443-db4b9c41bc49": {
+          "id": "160cd3df-4cc2-40f3-9443-db4b9c41bc49",
+          "Concept": "Evaluation Method",
+          "Instance": "Evaluation Method",
+          "description": "",
+          "properties": {},
+          "display": {
+            "x": 84,
+            "y": 156
+          }
+        },
+        "c1893c17-8d02-4ca1-81a0-c0e91be1e436": {
+          "id": "c1893c17-8d02-4ca1-81a0-c0e91be1e436",
+          "Concept": "Evaluation Method",
+          "Instance": "Evaluation Method",
+          "description": "",
+          "properties": {},
+          "display": {
+            "x": 228,
+            "y": -120
+          }
+        }
+      },
+      "display": {
+        "camera_x": 960,
+        "camera_y": 480.5,
+        "camera_z": 0.75,
+        "x": -192,
+        "y": -504
+      }
+    }
+  ],
+  "custom_nodes": []
+}

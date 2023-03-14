@@ -1,0 +1,499 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.w3id.org/iSeeOnto/BehaviourTree#"
+     xml:base="https://www.w3id.org/iSeeOnto/BehaviourTree"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree">
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Belén Díaz-Agudo</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Corsar</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ikechukwu Nkisi-Orji</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jesus Miguel Darias Goitia</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juan A. Recio-Garcia</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marta Caro Martínez</terms:contributor>
+        <terms:description xml:lang="en">The focus of the Behaviour Tree ontology is to represented Behaviour Trees as used by the ExplanationExperienceEditor (https://github.com/isee4xai/ExplanationExperienceEditor) and the iSee platform to model the experiences of users seeking explanations for the outputs of an AI system.
+
+			This ontology was created as part of the iSee project (https://isee4xai.com) which received funding from EPSRC under the grant number EP/V061755/1. iSee is part of the CHIST-ERA pathfinder programme for European coordinated research on future and emerging information and communication technologies.</terms:description>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Behaviour Tree Ontology</terms:title>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">btree</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.w3id.org/iSeeOnto/BehaviourTree</vann:preferredNamespaceUri>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#customNodes -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#customNodes">
+        <rdfs:label xml:lang="en">custom nodes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#display -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#display">
+        <rdfs:comment xml:lang="en">Display properties such as x and y positions.</rdfs:comment>
+        <rdfs:label xml:lang="en">display</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#firstChild -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#firstChild">
+        <rdfs:comment xml:lang="en">The first child of a node.</rdfs:comment>
+        <rdfs:label xml:lang="en">first child</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#hasDictionaryMember -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#hasDictionaryMember">
+        <rdfs:label xml:lang="en">has dictionary member</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#next -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#next">
+        <rdfs:comment xml:lang="en">The next sibling of a node.</rdfs:comment>
+        <rdfs:label xml:lang="en">next</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#nodes -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#nodes">
+        <rdfs:label xml:lang="en">nodes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#pairValueObject -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#pairValueObject">
+        <rdfs:label>pair value object</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#properties -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#properties">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#rootNode -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#rootNode">
+        <rdfs:label xml:lang="en">root node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#selectedTree -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#selectedTree">
+        <rdfs:label xml:lang="en">selected tree</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#trees -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#trees">
+        <rdfs:label xml:lang="en">trees</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#pairKey -->
+
+    <owl:DatatypeProperty rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#pairKey">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:label xml:lang="en">pair key</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#pair_value_literal -->
+
+    <owl:DatatypeProperty rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#pair_value_literal">
+        <rdfs:label xml:lang="en">pair value literal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#ActionNode -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#ActionNode">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#Node"/>
+        <rdfs:label xml:lang="en">Action Node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#BehaviourTree -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#BehaviourTree">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#customNodes"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#Node"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#trees"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#Tree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#selectedTree"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#Tree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Behaviour Tree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#CompositeNode -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#CompositeNode">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#Node"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#firstChild"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#Node"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Composite Node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#ConditionNode -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#ConditionNode">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#Node"/>
+        <rdfs:label xml:lang="en">Condition Node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#DecoratorNode -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#DecoratorNode">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#Node"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#firstChild"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#Node"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Decorator Node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#Dictionary -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#Dictionary">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#hasDictionaryMember"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#KeyValuePair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Dictionary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#EvaluationMethodNode -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#EvaluationMethodNode">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#ActionNode"/>
+        <rdfs:label xml:lang="en">Evaluation Method Node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#ExplanationMethodNode -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#ExplanationMethodNode">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#ActionNode"/>
+        <rdfs:label xml:lang="en">Explanation Method Node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#FailureNode -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#FailureNode">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#ActionNode"/>
+        <rdfs:label xml:lang="en">Failure Node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#InverterNode -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#InverterNode">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#DecoratorNode"/>
+        <rdfs:label xml:lang="en">Inverter Node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#KeyLiteralValuePair -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#KeyLiteralValuePair">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#KeyValuePair"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#pair_value_literal"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#KeyObjectValuePair"/>
+        <rdfs:label xml:lang="en">Key Literal Value Pair</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#KeyObjectValuePair -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#KeyObjectValuePair">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#KeyValuePair"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#pairValueObject"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Key Object Value Pair</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#KeyValuePair -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#KeyValuePair">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#pairKey"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Key Value Pair</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#LimitAtActivationsNode -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#LimitAtActivationsNode">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#DecoratorNode"/>
+        <rdfs:label xml:lang="en">Limit At Activations Node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#Node -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#Node">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#display"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#Dictionary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#properties"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#Dictionary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#next"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#Node"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#PriorityNode -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#PriorityNode">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#CompositeNode"/>
+        <rdfs:label xml:lang="en">Priority Node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#RepeatAtXNode -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#RepeatAtXNode">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#DecoratorNode"/>
+        <rdfs:label xml:lang="en">Repeat At X Node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#RepeatUntilFailureNode -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#RepeatUntilFailureNode">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#DecoratorNode"/>
+        <rdfs:label xml:lang="en">Repeat Until Failure Node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#RepeatUntilSuccessNode -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#RepeatUntilSuccessNode">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#DecoratorNode"/>
+        <rdfs:label xml:lang="en">Repeat Until Succes sNode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#SequenceNode -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#SequenceNode">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#CompositeNode"/>
+        <rdfs:label xml:lang="en">SequenceNode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#SucceederNode -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#SucceederNode">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#ActionNode"/>
+        <rdfs:label xml:lang="en">Succeeder Node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/iSeeOnto/BehaviourTree#Tree -->
+
+    <owl:Class rdf:about="https://www.w3id.org/iSeeOnto/BehaviourTree#Tree">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#display"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#Dictionary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#nodes"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#Node"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#rootNode"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://www.w3id.org/iSeeOnto/BehaviourTree#Node"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Tree</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
