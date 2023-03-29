@@ -158,8 +158,11 @@ public class OWLInstance {
 		// Check if the explainer exists in the catalogue
 		ArrayList<String> myIndividuals = printIndividualsByclass(o, "Explainer");
 		
-		//if(myIndividuals.contains(currentNode.getInstance())) {
-		if(myIndividuals.contains("LIMETabular")) {
+		System.out.println(myIndividuals);
+		
+
+		System.out.println(myNode.getInstance());
+		if(myIndividuals.contains(myNode.getInstance().replaceAll("/","_"))) {
 			// if it exists, add the explainer as property of the node
 		
 			addAssertion(myClassAssertions, dataFactory, pm, "KeyLiteralValuePair", myNode.getId() + "VP");
@@ -169,7 +172,7 @@ public class OWLInstance {
 			// the instance name has to be the same than the explainer in the catalogue on the ontology
 		
 		} else {
-			throw new Exception("That explainer does not exist. Please, include it on this website: ********** TODO");
+			throw new Exception("The explainer " + myNode.getInstance() + " does not exist. Please, include it on this website: https://cockpit-dev.isee4xai.com/user/login");
 		}
 	}
 	
@@ -191,9 +194,9 @@ public class OWLInstance {
 		createDataProperty(myDataPropAssertions, dataFactory, pm, pm, "pair_key", myNode.getId() + "VP", "explainer");
 		
 		// Assertion value iri of explainer to execute
-		//createDataProperty(myAssertions, dataFactory, pmw3, pm, "value", myNode.getId() + "VP", "http://www.semanticweb.org/isee/iseeonto/2022/9/30#" + myNode.getInstance());
+		createDataProperty(myDataPropAssertions, dataFactory, pmw3, pm, "value", myNode.getId() + "VP", "http://www.semanticweb.org/marta/ontologies/2023/0/iSeeOnto#" + myNode.getInstance().replaceAll("/","_"));
 		
-		createDataProperty(myDataPropAssertions, dataFactory, pmw3, pm, "value", myNode.getId() + "VP", "http://www.semanticweb.org/isee/iseeonto/2022/9/30#" + "LIMETabular");
+		//createDataProperty(myDataPropAssertions, dataFactory, pmw3, pm, "value", myNode.getId() + "VP", "http://www.semanticweb.org/isee/iseeonto/2022/9/30#" + "LIMETabular");
 		
 	}
 	
@@ -208,7 +211,7 @@ public class OWLInstance {
 		
 		// create the relationship between the solution and its explanation experience
 		// TODO - CHANGE THE NAME OF THE EXPLANATION EXPERIENCE FOR THE ACTUAL EXPLANATION EXPERIENCE
-		createObjectProperty(myObjPropAssertions, dataFactory, pmSemantic, pm, pmSemantic, "ExampleExplanationExperience", this.behaviourTree.getTitle(), "hasSolution");
+		createObjectProperty(myObjPropAssertions, dataFactory, pmSemantic, pm, pmSemantic, "GradCamExpExperience", this.behaviourTree.getTitle(), "hasSolution");
 
 		
 		// create object property to indicate the selected tree to the BT
@@ -258,7 +261,8 @@ public class OWLInstance {
 		OWLDataFactory dataFactory = m.getOWLDataFactory();
 		PrefixManager prefixManager = new DefaultPrefixManager(null, null, this.base);
 		PrefixManager prefixManagerW3 = new DefaultPrefixManager(null, null, "http://www.w3.org/ns/prov#"); 
-		PrefixManager prefixManagerSematic = new DefaultPrefixManager(null, null, "http://www.semanticweb.org/isee/iseeonto/2022/9/30#");
+		//PrefixManager prefixManagerSematic = new DefaultPrefixManager(null, null, "http://www.semanticweb.org/isee/iseeonto/2022/9/30#");
+		PrefixManager prefixManagerSematic = new DefaultPrefixManager(null, null, "http://www.semanticweb.org/marta/ontologies/2023/0/iSeeOnto#");
 		
 		
 		try {
@@ -312,7 +316,7 @@ public class OWLInstance {
 		createNewInstance(manager, ontology);
 		
 		// writing the result in a new file
-		IRI destination = IRI.create(new File("updated-iSeeOnto.owl"));
+		IRI destination = IRI.create(new File("iSeeOnto_explainers.owl"));
         //manager.saveOntology(ontology, new OWLXMLDocumentFormat(), destination);
 		
 		OWLDocumentFormat format = manager.getOntologyFormat(ontology);   
