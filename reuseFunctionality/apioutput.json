@@ -1,0 +1,160 @@
+[
+    {
+        "name": "Tree",
+        "score__": 7,
+        "usecase": "64628149ae10f5340983902d",
+        "persona": "6462cd22b1e8dd19e7752d64",
+        "intent": "intent-568851",
+        "description": "",
+        "path": "b3projects-1f8a2fa2-b51f-4690-bb4f-8b4e1350ff52",
+        "data": {
+            "version": "0.1.0",
+            "scope": "project",
+            "selectedTree": "33def3ec-31a8-47c1-856c-7fd724718df2",
+            "trees": [
+                {
+                    "version": "0.1.0",
+                    "scope": "tree",
+                    "id": "33def3ec-31a8-47c1-856c-7fd724718df2",
+                    "Instance": "Explanation Experience",
+                    "description": "",
+                    "root": "546f5cee-68b0-4b90-85be-786b9957d03a",
+                    "properties": {},
+                    "nodes": {
+                        "5112868d-f790-4665-ab3e-18a36a857363": {
+                            "id": "5112868d-f790-4665-ab3e-18a36a857363",
+                            "Concept": "Priority",
+                            "Instance": "Priority",
+                            "description": "",
+                            "properties": {},
+                            "display": {
+                                "x": -60,
+                                "y": 168
+                            },
+                            "firstChild": {
+                                "Id": "85b9b22e-1b0a-4a9b-81a9-83952d27271a",
+                                "Next": {
+                                    "Id": "5829d6db-5011-4ad8-846a-ab8452c6be46",
+                                    "Next": null
+                                }
+                            }
+                        },
+                        "546f5cee-68b0-4b90-85be-786b9957d03a": {
+                            "id": "546f5cee-68b0-4b90-85be-786b9957d03a",
+                            "Concept": "Sequence",
+                            "Instance": "Sequence",
+                            "description": "",
+                            "properties": {},
+                            "display": {
+                                "x": -60,
+                                "y": 84
+                            },
+                            "firstChild": {
+                                "Id": "5112868d-f790-4665-ab3e-18a36a857363",
+                                "Next": null
+                            }
+                        },
+                        "85b9b22e-1b0a-4a9b-81a9-83952d27271a": {
+                            "id": "85b9b22e-1b0a-4a9b-81a9-83952d27271a",
+                            "Concept": "User Question",
+                            "Instance": "User Question",
+                            "description": "",
+                            "properties": {},
+                            "display": {
+                                "x": -192,
+                                "y": 324
+                            },
+                            "params": {
+                                "Question": {
+                                    "key": "Question",
+                                    "value": "Why does the system predict category Y for image X?"
+                                }
+                            }
+                        },
+                        "5829d6db-5011-4ad8-846a-ab8452c6be46": {
+                            "id": "5829d6db-5011-4ad8-846a-ab8452c6be46",
+                            "Concept": "Explanation Method",
+                            "Instance": "/Tabular/DeepSHAPGlobal",
+                            "description": "",
+                            "properties": {},
+                            "display": {
+                                "x": 60,
+                                "y": 324
+                            },
+                            "params": {
+                                "output_classes": {
+                                    "key": "output_classes",
+                                    "value": "[ ]",
+                                    "default": "[ ]",
+                                    "range": [
+                                        null,
+                                        null
+                                    ],
+                                    "required": "false",
+                                    "description": "Array of integers representing the classes to be explained. Defaults to class 1.",
+                                    "type": "text"
+                                },
+                                "top_classes": {
+                                    "key": "top_classes",
+                                    "value": 1,
+                                    "default": 1,
+                                    "range": [
+                                        null,
+                                        null
+                                    ],
+                                    "required": "false",
+                                    "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+                                    "type": "number"
+                                },
+                                "num_features": {
+                                    "key": "num_features",
+                                    "value": 10,
+                                    "default": 10,
+                                    "range": [
+                                        null,
+                                        null
+                                    ],
+                                    "required": "false",
+                                    "description": "Integer representing the maximum number of features to be included in the explanation.",
+                                    "type": "number"
+                                },
+                                "png_width": {
+                                    "key": "png_width",
+                                    "value": 1000,
+                                    "default": 1000,
+                                    "range": [
+                                        null,
+                                        null
+                                    ],
+                                    "required": "false",
+                                    "description": "Width (in pixels) of the png image containing the explanation.",
+                                    "type": "number"
+                                },
+                                "png_height": {
+                                    "key": "png_height",
+                                    "value": 400,
+                                    "default": 400,
+                                    "range": [
+                                        null,
+                                        null
+                                    ],
+                                    "required": "false",
+                                    "description": "Height (in pixels) of the png image containing the explanation.",
+                                    "type": "number"
+                                }
+                            }
+                        }
+                    },
+                    "display": {
+                        "camera_x": 937,
+                        "camera_y": 472,
+                        "camera_z": 1,
+                        "x": -60,
+                        "y": 0
+                    }
+                }
+            ],
+            "custom_nodes": []
+        }
+    }
+]
